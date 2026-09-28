@@ -4,7 +4,7 @@ const BUSINESS = {
     phone: "9360039283",
     prices: {
         portfolio: "₹2,999",
-        static: "₹4,999",
+        static: "₹6,500",
         custom: "Get Custom Quote",
         hosting: "Get Custom Quote"
     }
