@@ -52,13 +52,13 @@
     <section class="section">
         <div class="container">
             <div class="products-grid">
-                <a href="#" class="product-category" data-wa-msg="Hi Team Seven System Solution, I need information about Desktop Computers.">
+                <a href="#" class="product-category" data-modal-target="computersModal">
                     <i class="fas fa-desktop"></i>
                     <h4>Computers</h4>
                     <span style="font-size: 0.8rem; color: var(--text-light);">Desktops, Custom, Office</span>
                     <div style="margin-top: 8px; font-weight: 600; color: var(--primary);">Starts at ₹7,999</div>
                 </a>
-                <a href="#" class="product-category" data-wa-msg="Hi Team Seven System Solution, I need information about Laptops.">
+                <a href="#" class="product-category" data-modal-target="laptopsModal">
                     <i class="fas fa-laptop"></i>
                     <h4>Laptops</h4>
                     <span style="font-size: 0.8rem; color: var(--text-light);">Business, Student, Refurbished</span>
@@ -181,6 +181,204 @@
     <a href="#" class="fab-whatsapp" data-wa-msg="Hi Team Seven System Solution, I would like to enquire about your products/services." title="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
+
+    <!-- Laptops Modal -->
+    <div class="modal-overlay" id="laptopsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Available Laptops</h3>
+                <button class="modal-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-product-section">
+                    <h4>Dell Laptops</h4>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h5>Dell Latitude 5400</h5>
+                            <p>i5-8Th Gen / 8GB / 256GB / 14" / WIN11</p>
+                        </div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="Dell Latitude 5400 - i5-8Th Gen/8GB/256GB/14'/WIN11"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h5>Dell Latitude 5410</h5>
+                            <p>i5-7th Gen / 8GB / 512GB / 14" / WIN11</p>
+                        </div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="Dell Latitude 5410 - i5-7th Gen/8GB/512GB/14'/WIN11"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h5>Dell Latitude 5420</h5>
+                            <p>i5-11th Gen / 8GB / 512GB / 14" / WIN11</p>
+                        </div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="Dell Latitude 5420 - i5-11th Gen/8GB/512GB/14'/WIN11"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h5>Dell Latitude 5420 (Touch)</h5>
+                            <p>i5-11th Gen / 8GB / 512GB / 14" / WIN11 / TOUCH</p>
+                        </div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="Dell Latitude 5420 - i5-11th Gen/8GB/512GB/14'/WIN11/TOUCH"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h5>Dell Latitude 5410 (i7)</h5>
+                            <p>i7-10th Gen / 8GB / 512GB / 14" / WIN11</p>
+                        </div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="Dell Latitude 5410 - i7-10th Gen/8GB/512GB/14'/WIN11"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h5>Dell Latitude 5430 (Touch)</h5>
+                            <p>i7-12th Gen / 8GB / 256GB / 14" / WIN11 / TOUCH</p>
+                        </div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="Dell Latitude 5430 - i7-12th Gen/8GB/256GB/14'/WIN11/TOUCH"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-product-section">
+                    <h4>HP Laptops</h4>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h5>HP 245-g7</h5>
+                            <p>Ryzon3 / 8GB / 256GB / 14" / Win11</p>
+                        </div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="HP 245-g7 - Ryzon3/8gb/256gb/14'/Win11"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h5>HP 840-G8 EliteBook</h5>
+                            <p>i5-11Th Gen / 8GB / 512GB / 14" / Win11</p>
+                        </div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="HP 840-G8 ElightBook - i5-11Th Gen/8gb/512gb/14'/Win11"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Computers Modal -->
+    <div class="modal-overlay" id="computersModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Available Computers</h3>
+                <button class="modal-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-product-section">
+                    <h4>USED / REFURBISHED PC</h4>
+                    <div class="product-item">
+                        <div class="product-info"><h5>i3 3rd Gen PC</h5></div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="USED / REFURBISHED PC - i3 3rd Gen"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info"><h5>i3 4th Gen PC</h5></div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="USED / REFURBISHED PC - i3 4th Gen"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info"><h5>i3 6th Gen PC</h5></div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="USED / REFURBISHED PC - i3 6th Gen"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info"><h5>i3 7th Gen PC</h5></div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="USED / REFURBISHED PC - i3 7th Gen"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info"><h5>i3 8th Gen PC</h5></div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="USED / REFURBISHED PC - i3 8th Gen"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info"><h5>i3 9th Gen PC</h5></div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="USED / REFURBISHED PC - i3 9th Gen"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-product-section">
+                    <h4>NEW / BUDGET PC</h4>
+                    <div class="product-item">
+                        <div class="product-info"><h5>i3 10th Gen PC</h5></div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="NEW / BUDGET PC - i3 10th Gen"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info"><h5>i3 12th Gen PC</h5></div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="NEW / BUDGET PC - i3 12th Gen"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info"><h5>i3 13th Gen PC</h5></div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="NEW / BUDGET PC - i3 13th Gen"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info"><h5>i3 14th Gen PC</h5></div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="NEW / BUDGET PC - i3 14th Gen"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-product-section">
+                    <h4>CURRENT GENERATION</h4>
+                    <div class="product-item">
+                        <div class="product-info"><h5>Intel Core 3</h5></div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="CURRENT GENERATION PC - Intel Core 3"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info"><h5>Intel Core 5</h5></div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="CURRENT GENERATION PC - Intel Core 5"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info"><h5>Intel Core 7</h5></div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="CURRENT GENERATION PC - Intel Core 7"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info"><h5>Intel Core Ultra</h5></div>
+                        <div class="product-action">
+                            <button class="btn-wa-sm" data-wa-product="CURRENT GENERATION PC - Intel Core Ultra"><i class="fab fa-whatsapp"></i> Get Price</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Custom JS -->
     <script src="js/script.js"></script>

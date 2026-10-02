@@ -129,6 +129,58 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Modal handling
+    const modalTriggers = document.querySelectorAll('[data-modal-target]');
+    const modals = document.querySelectorAll('.modal-overlay');
+    const modalCloses = document.querySelectorAll('.modal-close');
+
+    modalTriggers.forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = trigger.getAttribute('data-modal-target');
+            const modal = document.getElementById(targetId);
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            }
+        });
+    });
+
+    const closeModal = (modal) => {
+        if (modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    };
+
+    modalCloses.forEach(closeBtn => {
+        closeBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const modal = closeBtn.closest('.modal-overlay');
+            closeModal(modal);
+        });
+    });
+
+    window.addEventListener('click', (e) => {
+        modals.forEach(modal => {
+            if (e.target === modal) {
+                closeModal(modal);
+            }
+        });
+    });
+
+    // Modal Product WhatsApp handler
+    const waProductBtns = document.querySelectorAll('[data-wa-product]');
+    waProductBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const product = btn.getAttribute('data-wa-product');
+            const msg = `Hi ${BUSINESS.name},\n\nI want to know the price for:\n*${product}*\n\nPlease share the price list.`;
+            const url = `https://wa.me/${BUSINESS.whatsapp}?text=${encodeURIComponent(msg)}`;
+            window.open(url, '_blank');
+        });
+    });
+
     // Add animation on scroll classes
     const animateElements = document.querySelectorAll('.card, .section-header');
     
